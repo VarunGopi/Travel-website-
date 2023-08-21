@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel page</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h1 class="logo">Travel</h1>
+            <div class="toggle"></div>
+        </header>
+        <video src="varu.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Explore the world</h2>
+            <h3>with Varun</h3>
+            <p>"Embark on a journey that transcends boundaries and awakens your wanderlust. Discover new horizons, immerse yourself in vibrant cultures, and create memories that will linger like sunsets over distant shores. Let us be your guide to a world of breathtaking experiences and unforgettable adventures."
+            </p>
+            <a href="#">Explore</a>
+        </div>
+
+
+        <ul class="social">
+
+            <li><a href="https://github.com/VarunGopi"><img src="github.png" alt="" /></a></li>
+            <li><a href="www.behance.net/99825f04"><img src="instagram.png" alt="" /></a></li>
+            <li><a href="https://www.linkedin.com/in/varun-g- 79575122a"><img src="linkedin.png" alt="" /></a></li>
+
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">This is a simple website</a></li>
+            <li><a href="#">Thanks for Visiting this </a></li>
+            <li><a href="#">Travel website</a></li>
+        
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
